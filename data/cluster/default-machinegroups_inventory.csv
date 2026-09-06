@@ -1,0 +1,10 @@
+representative,timestamp_check,number_machines,number_decommissioned,type,subtype,comment,manufacturer,model,cpu_model,hepscore,installation_date,cluster(main_Puppet_hostgroup),total_cores,total_threads,total_mem_in_Gb,power_min_60d,power_max_60d
+default-DESYT3,2024-01-01T00:00:00,40,0,DESYT3,0,hardcoded ORACLE-D_orig default,,DELL PowerEdge R6525,AMD EPYC 7402 24-Core Processor,1450,2020,DEFAULT,48,96,256,112,530.1
+default-DESYT4,2024-01-01T00:00:00,76,0,DESYT4,0,hardcoded ORACLE-D_orig default,,Dell PowerEdge R430,Intel(R) Xeon(R) CPU E5-2640 v4,392.74,2017,DEFAULT,20,40,128,112,224.14
+default-DESYT11,2024-01-01T00:00:00,41,0,DESYT11,0,hardcoded ORACLE-D_orig default,,Lenovo ThinkSystem SR630 V3,Intel(R) Xeon(R) Platinum 8480CL,2587.39,2023,DEFAULT,112,224,512,336,739.18
+default-DESYT13,2024-01-01T00:00:00,24,0,DESYT13,0,hardcoded ORACLE-D_orig default,,DELL PowerEdge R6525,AMD EPYC 7443 24-Core Processor,1617,2021,DEFAULT,48,96,256,180,569.78
+default-DESYT16,2024-01-01T00:00:00,20,0,DESYT16,0,hardcoded ORACLE-D_orig default,,Supermicro BB 1023US-TR4 H11DSU-iN,AMD EPYC 7451 24-Core Processor,1061.09,2018,DEFAULT,48,96,256,124,526
+default-DESYT17,2024-01-01T00:00:00,10,0,DESYT17,0,hardcoded ORACLE-D_orig default,,Dell PowerEdge R430,Intel(R) Xeon(R) CPU E5-2640 v3,319.09,2015,DEFAULT,16,32,96,140,268.36
+default-DESYT26,2024-01-01T00:00:00,12,0,DESYT26,0,hardcoded ORACLE-D_orig default,,DELL PowerEdge R6525,AMD EPYC 74F3 24-Core Processor,1704.54,2022,DEFAULT,48,96,256,187,658
+default-DESYT31,2024-01-01T00:00:00,10,0,DESYT31,0,hardcoded ORACLE-D_orig default,,DELL PowerEdge R6525,AMD EPYC 7F72 24-Core Processor,1602.6,2021,DEFAULT,48,96,256,168,648
+default-DESYT382,2024-01-01T00:00:00,77,0,DESYT382,0,hardcoded ORACLE-D_orig default,,Dell PowerEdge M520,Intel(R) Xeon(R) CPU E5-2450 v2,335,2014,DEFAULT,1,1,1,59,289
