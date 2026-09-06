@@ -43,7 +43,7 @@ ORACLE-D (Julia) has its external package requirements declared in `OracleD.jl/P
 
 Requirements:
 - Julia 1.12 or newer (the migration was done with the current production release, 1.12.6, e.g. via [juliaup](https://github.com/JuliaLang/juliaup)).
-- Julia packages: `Dates`, `Printf`, `Random`, `JSON`, `OrderedCollections` (test/development tools: `BenchmarkTools`, `Cthulhu`, `FileIO`, `FlameGraphs`, `JET`, `Test`).
+- Julia packages: `Dates`, `Printf`, `Random`, `JSON`, `OrderedCollections` (test/development tools: `FileIO`, `Test`).
 
 To instantiate the package environment (creates/uses the local project environment from `Project.toml`), run from the `OracleD.jl/` directory:
 ```
