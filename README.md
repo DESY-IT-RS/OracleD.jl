@@ -62,7 +62,9 @@ using OracleD
 OracleD.main()
 ```
 
-This runs the job mix configured in the repository-root `config.json` — by default 40,000 ATLAS and 10,000 LHCb jobs on the default DESY Grid compute cluster from 2024-01-16 16:00 without any special running conditions at medium verbosity. It produces a log output, and the folder `logs/runs/[DATE]_<run-label>` containing the summary of the output. The information of grid carbon intensity is taken from the file configured in `carbon_intensity.filename` (e.g. `data/carbon_intensity/de_carbon_Intensity_2024_15min.csv`). All relative paths in the configuration are resolved against the repository root, so the command works from any working directory.
+This runs the job mix configured in the repository-root `config.json` — by default 50,000 GridPP jobs on the default DESY Grid compute cluster from 2024-01-16 16:00 without any special running conditions at medium verbosity. It produces a log output, and the folder `logs/runs/[DATE]_<run-label>` containing the summary of the output. The information of grid carbon intensity is taken from the file configured in `carbon_intensity.filename` (e.g. `data/carbon_intensity/de_carbon_Intensity_2024_15min.csv`). All relative paths in the configuration are resolved against the repository root, so the command works from any working directory.
+
+Output summary for the test run with default settings can be found in `logs/Demo_run_summary.txt` ---> can be verified against to make sure the code is working as intended.
 
 ## Configuration
 The simulation is configured via the `config.json` file at the repository root. In there, all relevant parameters are specified. They are split into several sections dealing with the different parts of the code.
