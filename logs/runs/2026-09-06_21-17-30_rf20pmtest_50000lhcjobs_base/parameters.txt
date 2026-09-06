@@ -1,0 +1,13 @@
+  start_time: 2024-01-16 16:00:00
+  max_end_time: 2024-01-23 16:00:00
+  simulation_length_seconds: 604800
+  timestep_seconds: 600
+  savings_policy: none
+  carbon_intensity_file: data/carbon_intensity/de_carbon_Intensity_2024_15min.csv
+  carbon_intensity_segments: 2024-01-16T16:00:00 to 2024-01-23T16:30:00
+  high_CI_threshold: 400
+  worker_nodes: 310
+  worker_cores: 22797
+  worker_node_inventory: DESYT3_0: 40, DESYT4_0: 76, DESYT11_0: 41, DESYT13_0: 24, DESYT16_0: 20, DESYT17_0: 10, DESYT26_0: 12, DESYT31_0: 10, DESYT382_0: 77
+  initial_jobs: GridPP: 50000
+  regular_incoming_jobs: none

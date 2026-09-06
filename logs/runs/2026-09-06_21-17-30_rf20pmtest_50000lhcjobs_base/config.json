@@ -1,0 +1,34 @@
+{
+    "Simulation": {
+        "desired_starttime": "2024-01-16 16:00",
+        "simulation_length": 604800,
+        "timestep": 600,
+        "savings_policy": "none",
+        "rng_seed": 42
+    },
+    "carbon_intensity": {
+        "folder": "data/carbon_intensity/",
+        "filename": "de_carbon_Intensity_2024_15min.csv",
+        "high_CI_threshold": 400
+    },
+    "cluster": {
+        "cluster_name": "DEFAULT",
+        "inventory_csv": "data/cluster/default-machinegroups_inventory.csv",
+        "frequency_csv": "data/cluster/default-frequency_dependence.csv",
+        "strict": false
+    },
+    "jobs": {
+        "initial_mix": {
+            "GridPP": 50000
+        },
+        "regular_incoming_mix": {},
+        "incoming_timestep": 3600
+    },
+    "output": {
+        "verbosity": "medium",
+        "debug": false,
+        "log_dir": "logs/runs",
+        "run_label": "RF20PMTest-1000000LHCJobs-Base",
+        "run_dir": "/work/ORACLE-D.jl/logs/runs/2026-09-06_21-17-30_rf20pmtest_1000000lhcjobs_base"
+    }
+}

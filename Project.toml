@@ -1,0 +1,35 @@
+name = "OracleD"
+uuid = "9eb4966d-a507-473c-abf9-23f58258070d"
+version = "1.1.0"
+authors = ["Dwayne Spiteri", "Gordon Stewart"]
+
+[workspace]
+projects = ["docs"]
+
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Cthulhu = "f68482b8-f384-11e8-15f7-abe071a5a75f"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+FlameGraphs = "08572546-2f56-4bcf-ba4e-bab62c3a3f89"
+JET = "c3a54625-cd67-489e-a8e7-0a5a0ff4e31b"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+BenchmarkTools = "1.8.0"
+Cthulhu = "3.0.2"
+FileIO = "1.20.0"
+FlameGraphs = "1.2.0"
+JET = "0.12.0"
+JSON = "0.21"
+OrderedCollections = "1"
+julia = "1.12"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -1,0 +1,21 @@
+2026-09-06 21:17:30,586  INFO  Writing run output to /work/ORACLE-D.jl/logs/runs/2026-09-06_21-17-30_rf20pmtest_1000000lhcjobs_base
+2026-09-06 21:17:31,388  INFO  Set to time: 2024-01-16 16:00:00
+2026-09-06 21:17:31,394  INFO  Set origin: 2026-09-06 21:17:31.389
+2026-09-06 21:17:31,422  INFO  Loading in Carbon Intensity Data
+2026-09-06 21:17:31,621  INFO  Created cluster with 310 worker nodes and 22797 cores
+2026-09-06 21:17:31,997  INFO  Created simulation with parameters:
+  start_time: 2024-01-16 16:00:00
+  max_end_time: 2024-01-23 16:00:00
+  simulation_length_seconds: 604800
+  timestep_seconds: 600
+  savings_policy: none
+  carbon_intensity_file: data/carbon_intensity/de_carbon_Intensity_2024_15min.csv
+  carbon_intensity_segments: 2024-01-16T16:00:00 to 2024-01-23T16:30:00
+  high_CI_threshold: 400
+  worker_nodes: 310
+  worker_cores: 22797
+  worker_node_inventory: DESYT3_0: 40, DESYT4_0: 76, DESYT11_0: 41, DESYT13_0: 24, DESYT16_0: 20, DESYT17_0: 10, DESYT26_0: 12, DESYT31_0: 10, DESYT382_0: 77
+  initial_jobs: GridPP: 50000
+  regular_incoming_jobs: none
+2026-09-06 21:17:32,651  INFO  No more jobs!
+2026-09-06 21:17:32,651  INFO  Ending simulation at 2024-01-17 22:30:00
