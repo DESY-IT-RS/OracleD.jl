@@ -1,0 +1,50 @@
+# GitHub Actions workflow that builds the Documenter.jl documentation and
+# deploys it to GitHub Pages (the `gh-pages` branch), following the
+# standard Julia documentation CI setup.
+#
+# On pushes to the default branch / tags the docs are built and published;
+# on pull requests a preview is built (and, with push_preview, published
+# under `preview/`).
+#
+# NOTE: if this package is hosted as a *subdirectory* of a larger repository
+# (e.g. `OracleD.jl/` inside the ORACLE-D repository), move this file to the
+# git repository root (`.github/workflows/Documentation.yml`) and add:
+#     defaults:
+#       run:
+#         working-directory: OracleD.jl
+# so that `julia --project=docs docs/make.jl` runs in the package directory.
+
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    tags: ['*']
+  pull_request:
+
+permissions:
+  contents: write
+  statuses: write
+
+concurrency:
+  group: docs
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.12'
+      - uses: julia-actions/cache@v1
+      - name: Install dependencies
+        run: julia --project=docs -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
+      - name: Build and deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
+        run: julia --project=docs docs/make.jl
